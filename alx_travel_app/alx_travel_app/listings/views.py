@@ -1,3 +1,11 @@
 from django.shortcuts import render
+from rest_framework import viewsets
+from .models import Destination
+from .serializers import DestinationSerializer
 
-# Create your views here.
+class DestinationViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows destinations to be viewed or edited.
+    """
+    queryset = Destination.objects.all().order_by('-created_at')
+    serializer_class = DestinationSerializer

@@ -89,7 +89,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',         # Adds several security enhancements.
     'django.contrib.sessions.middleware.SessionMiddleware',  # Manages user sessions.
-    # 'corsheaders.middleware.CorsMiddleware',               # Handles CORS headers (place high).
+    'corsheaders.middleware.CorsMiddleware',               # Handles CORS headers (place high).
     'django.middleware.common.CommonMiddleware',             # Handles basic URL processing.
     'django.middleware.csrf.CsrfViewMiddleware',             # Adds Cross-Site Request Forgery protection.
     'django.contrib.auth.middleware.AuthenticationMiddleware', # Associates users with requests using sessions.
