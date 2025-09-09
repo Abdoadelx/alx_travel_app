@@ -77,7 +77,7 @@ INSTALLED_APPS = [
     'drf_yasg',  # <-- Add this line
 
     # Local Apps
-    'listings',
+    'alx_travel_app.listings',
 ]
 
 
